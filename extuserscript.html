@@ -1,27 +1,25 @@
 <p><b>Redirecting...</b></p>
 
 <script>
-    var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-    var isFirefox = typeof InstallTrigger !== 'undefined';
-    var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) {
-        return p.toString() === "[object SafariRemoteNotification]";
-    })(!window['safari'] || safari.pushNotification);
-    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
-    var isEdge = !isIE && !!window.StyleMedia;
-    var isChrome = !!window.chrome && !!window.chrome.webstore;
-    var isBlink = (isChrome || isOpera) && !!window.CSS;
+var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+var isFirefox = typeof InstallTrigger !== 'undefined';
+var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+var isEdge = !isIE && !!window.StyleMedia;
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-    if (isChrome = true) {
-        window.location.href = https: //chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en;
-    } else if (isFirefox = true) {
-        window.location.href = https: //addons.mozilla.org/en-US/firefox/addon/greasemonkey/;
-    } else if (isEdge = true) {
-        window.location.href = https: //www.microsoft.com/en-us/store/p/tampermonkey/9nblggh5162s;
-    } else if (ifOpera = true) {
-        window.location.href = https: //addons.opera.com/en/extensions/details/violent-monkey/;
-    } else if (isSafari = true) {
-        window.location.href = https: //safari.tampermonkey.net/tampermonkey.safariextz;
-    } else {
-        document.body.innerHTML = document.body.innerHTML.replace('Redirecting...', 'Your browser is not compatible! Please use other browser!');
-    }
+if (isChrome = true) {
+window.location.replace("https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en");
+} else if (isFirefox = true) {
+window.location.replace("https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/");
+} else if (isEdge = true) {
+window.location.replace("https://www.microsoft.com/en-us/store/p/tampermonkey/9nblggh5162s");
+} else if (ifOpera = true) {
+window.location.replace("https://addons.opera.com/en/extensions/details/violent-monkey/");
+} else if (isSafari = true) {
+window.location.replace("https://safari.tampermonkey.net/tampermonkey.safariextz");
+} else {
+document.body.innerHTML = document.body.innerHTML.replace('Redirecting...', 'Your browser is not compatible! Please use other browser!');
+}
 </script>
