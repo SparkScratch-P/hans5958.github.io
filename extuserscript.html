@@ -9,15 +9,15 @@ var isEdge = !isIE && !!window.StyleMedia;
 var isChrome = !!window.chrome && !!window.chrome.webstore;
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-if (isChrome) {
+if (isChrome == true) {
 window.location.replace("https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en");
-} else if (isFirefox) {
+} else if (isFirefox == true) {
 window.location.replace("https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/");
-} else if (isEdge) {
+} else if (isEdge == true) {
 window.location.replace("https://www.microsoft.com/en-us/store/p/tampermonkey/9nblggh5162s");
-} else if (ifOpera) {
+} else if (ifOpera ==  true) {
 window.location.replace("https://addons.opera.com/en/extensions/details/violent-monkey/");
-} else if (isSafari) {
+} else if (isSafari == true) {
 window.location.replace("https://safari.tampermonkey.net/tampermonkey.safariextz");
 } else {
 document.body.innerHTML = document.body.innerHTML.replace('Redirecting...', 'Your browser is not compatible! Please use other browser!');
