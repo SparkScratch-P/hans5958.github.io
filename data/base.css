@@ -1,0 +1,38 @@
+/*
+Main elements.
+*/
+
+body {
+  margin: 50px;
+  font-family: Roboto, sans-serif;
+}
+h1 {
+  font-family: Roboto, sans-serif;
+}
+p, li {
+  font-family: Open Sans, sans-serif;
+}
+li {
+  margin: 10px 0;
+}
+br {
+      display: block; 
+      content: "";
+      margin-top: 1.4em;
+}
+
+/*
+Class, ID, and specifics.
+*/
+
+.widget, #github-card {
+  float: right;
+  display: block;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
