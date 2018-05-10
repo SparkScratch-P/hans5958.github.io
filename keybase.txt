@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/hans5958
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hans5958.github.io
+  * I am hans5958 (https://keybase.io/hans5958) on keybase.
+  * I have a public key with fingerprint E128 0A38 C6BE 5FF5 0AB3  C449 0EDA 2FD5 3E54 C2D7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017a9ea8654211bab74fdc0a8eabe3798d6134fa91a046e61c6ff510695b0b06910a",
+      "fingerprint": "e1280a38c6be5ff50ab3c4490eda2fd53e54c2d7",
+      "host": "keybase.io",
+      "key_id": "0eda2fd53e54c2d7",
+      "kid": "01017a9ea8654211bab74fdc0a8eabe3798d6134fa91a046e61c6ff510695b0b06910a",
+      "uid": "e336057f1bdb7fc297b62a2ed18a6019",
+      "username": "hans5958"
+    },
+    "service": {
+      "hostname": "hans5958.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1525917616,
+  "expire_in": 157680000,
+  "prev": "720a6d0193fc489618b5a38461fabefa92ee9b3b63383ed3701a5183833fe012",
+  "seqno": 21,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJrSBRRFF6z59ZCRG1SSTWVUm1y7zzuzKwQZdCWtFRQKb3We2furJM6
+u+7M2spa1ApFoVhiIkEKEUV/ekf02LIyiqIHQRFm4Z8QekASCUVRd6z+1N/un8M5
+9/u++51zT48v1+PNCX0c8vbZi+ycBzc7k56Nn06cSXMkptdzwTRXRYcDrdap7USq
+TJ0LcgACKGOVYgVJIg8hwUQWDV0DWKGYUEFWFR1BQTSwCjEQEUVQQ4YhQYBUiQDC
+AgSYC3CGaUVpIp4wLYfJUsgrAAuKhgiVGBxgImiiqAKqY97QJYFKosbrMiNWxmyX
+wcwRbNMiM8ZqLIn8svcv/j/7Tg7LUUFAQJINSHQiGxqvygTxmKc6VDACUHWBNk1Y
+uIYydCW2bEmVFG5HgGPVOlOj7mDdTv5CFEVNpzJJfnUVT8ScmBardu8dJ24HXb5T
+H3cJ2ymJ/JaKENPS2TQZo44mbDNmcUHIkJpjutpQ4iUVygiiAEdTcTNBI6aLkGSk
+AHbcd2gdk5R5gJHOzAuGJioqggqR2JeICBpsQmwwPKUqEQgSBEWguiADiCWosEQw
+KIA85zZXa8W4IA+ZTxxlmrYZtbCTTFBux63uzSM9OV7P6FEj3DXzeMdN/LN8gdVj
+PYfGr5gZfFa7pT93fc+NlvZ9C7L5X/0VzW3hNck7x5ZmzQJSczh09mj4ZF9DY4my
+Lnvj89TO6+X96pIXM9rCA68ebmpKOxsH54CG2Zd8HYUtzS+/+fd+nzCl94shC0dm
+W1e6b9+/vL03/8mPs+p8jT597+Xu5p3bcPHU1+XcvIUry3qXjVwrfUi3Hj8wa9Xu
+ZcWBVKjr3c2dDa2DmfCEH11jlnem/IXFRV3lO/Ps668LxzZuPV+wYfHmbbemd1fJ
+SvatXeivteaSkmu+u5lzS4sPXJjsS33LZHd7Hu/a37b34LTnRWubMqX1ZX3tA29q
+esbfaxrY86ij4mqktAUMnQ5Nah7a9RN3Tj57
+=shyx
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hans5958
+
+==================================================================
