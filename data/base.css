@@ -1,38 +1,130 @@
-/*
-Main elements.
-*/
-
-body {
-  margin: 50px;
-  font-family: Roboto, sans-serif;
-}
-h1 {
-  font-family: Roboto, sans-serif;
-}
-p, li {
-  font-family: Open Sans, sans-serif;
-}
-li {
-  margin: 10px 0;
-}
-br {
-      display: block; 
-      content: "";
-      margin-top: 1.4em;
+#account
+{
+  width:100%;
 }
 
-/*
-Class, ID, and specifics.
-*/
-
-.widget, #github-card {
-  float: right;
-  display: block;
+#account td
+{
+  width:auto;
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+
+#content
+{
+  min-height:calc(100vh-190px);
+}
+
+#footer
+{
+  bottom:0;
+  height:auto;
+  left:0;
+  position:relative;
+  text-align:center;
+  width:100%;
+}
+
+#header h1
+{
+  margin-bottom:auto;
+  margin-top:auto;
+}
+
+#header table
+{
+  display:inline;
+}
+
+.accountBox
+{
+  overflow:scroll;
+}
+
+.hidden
+{
+  display:none;
+}
+
+.siteIcon
+{
+  display:block;
+  float:left;
+  margin-bottom:auto;
+  margin-right:5px;
+  margin-top:auto;
+  max-height:64px;
+  max-width:64px;
+}
+
+.siteName
+{
+  font-size:20px;
+  margin:8px 0 0;
+}
+
+.titledesc
+{
+  display:block;
+  float:right;
+  font-style:italic;
+}
+
+.userName
+{
+  font-size:12px;
+  margin:0 0 8px;
+}
+
+.widget,#github-card
+{
+  display:block;
+  float:right;
+}
+
+:focus
+{
+  outline:0;
+}
+
+a.fancy,a.fancy:visited,#header a,#header a:hover,#header a:visited
+{
+  color:#000;
+  text-decoration:none;
+}
+
+a.fancy:hover
+{
+  text-decoration:underline;
+}
+
+body
+{
+  font-family:Roboto, sans-serif;
+  margin:50px 50px 25px;
+}
+
+br
+{
+  content:"";
+  display:block;
+  margin-top:1.4em;
+}
+
+h1
+{
+  font-family:Roboto, sans-serif;
+}
+
+li
+{
+  margin:10px 0;
+}
+
+p,li
+{
+  font-family:Open Sans, sans-serif;
+}
+
+table
+{
+  table-layout:fixed;
 }
