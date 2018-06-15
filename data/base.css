@@ -10,7 +10,7 @@
 
 #content
 {
-  min-height:calc(100vh-190px);
+  min-height: calc(100vh - 190px);
 }
 
 #footer
@@ -32,6 +32,24 @@
 #header table
 {
   display:inline;
+}
+
+#portal img
+{
+  display:block;
+  height:200px;
+  margin: 0 auto;
+}
+
+#portal p 
+{
+  font-size:14px;
+  text-align:center;
+}
+
+#portal
+{
+  width:100%
 }
 
 .accountBox
