@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     var preArray = $("pre")[0].innerHTML.split("\n")
     var aArray = []
     var bArray = []
@@ -32,7 +32,6 @@ $(function () {
     a.setAttribute("class", "siteName")
     b.setAttribute("class", "userName")
     c.setAttribute("href", "#")
-    c.setAttribute("target", "_blank")
     d.setAttribute("class", "siteIcon")
     for (i = 0; i < aArray.length; i++) {
         c.innerHTML = ""
@@ -40,10 +39,15 @@ $(function () {
         a.innerHTML = aArray[i]
         b.innerHTML = bArray[i]
         if (cArray[i] != "") {
-            c.setAttribute("href", cArray[i])
+            c.setAttribute("onclick", "window.open(\"" + cArray[i] + "\")")
+            c.setAttribute("href", "#")
+            c.setAttribute("class", "fancy")
         } else {
+            c.removeAttribute("onclick")
             c.removeAttribute("href")
+            c.removeAttribute("class")
         }
+
         d.setAttribute("src", dArray[i])
         console.log(a)
         console.log(b)
@@ -59,5 +63,5 @@ $(function () {
             $("tr").last()[0].outerHTML += "<tr></tr>"
         }
     }
-    $("#rawacc")[0].setAttribute("class", "d-none")
+    $("pre")[0].setAttribute("class", "hidden")
 });

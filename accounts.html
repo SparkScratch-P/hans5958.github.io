@@ -1,55 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Accounts - Official Hans5958's Website</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49890594-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-49890594-3');
-    </script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="data/base.css">
-    <link rel="stylesheet" href="data/gh-profile-card.min.css">
-    <script src="data/gh-profile-card.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="data/accounts.js"></script>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Ready or not, here we go! Website of Hans5958.">
-	<meta name="author" content="Hans5958">
+  <!-- Title and Meta -->
+  <title>Hans5958's Website - Accounts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ready or not, here we go! Website of Hans5958.">
+  <meta name="author" content="Hans5958">
+  <!-- Require and Loading Page -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-loading-bar.min.css">
+  <script src="data/require.js"></script>
+  <!-- Local Scripts -->
+  <script src="data/accounts.js"></script>
+  <style>
+    #account{width:100%;table-layout:fixed;margin:0 20px}#account td{width:auto}#account a{color:#000}#account a:hover{text-decoration:underline}.siteIcon{display:block;float:left;margin-bottom:auto;margin-right:5px;margin-top:auto;max-height:64px;max-width:64px}.siteName{font-size:20px;margin:8px 0 0}.userName{font-size:12px;margin:0 0 8px}
+  </style>
 </head>
 
 <body>
-    <div id="header">
-        <table>
-            <tr>
-                <td><a href="index.html"><img src="https://avatars3.githubusercontent.com/u/11584103?s=460&v=4" height="39"></a></td>
-                <td><a href="index.html"><h1>Hans5958's Website</h1></a></td>
-            </tr>
-        </table>
-        <p class="titledesc">Ready or not, here we go!</p>
+  <!-- Overlay for Loading Page -->
+  <div id="overlay" style="position:fixed;position:fixed;z-index:1999;top:0;right:0;bottom:0;left:0;width:100%;height:100%;background-color:#fff;"></div>
+  <!-- Content below... -->
+  <div id="content">
+    <div class="container">
+      <h1>Accounts</h1>
+      <p>Here are some of my accounts. You can contact me through these.</p>
     </div>
-    <div id="content">
-        <h2>Accounts</h2>
-        <p>Here are some of my accounts. You can contact me through these.
-            <table id="account">
-                <tr>
-                </tr>
-            </table>
-    </div>
-    <pre>
+    <div class="container-fluid">
+      <table id="account">
+          <tr>
+          </tr>
+      </table>
+      <pre id="rawacc">
 It seems JavaScript is disabled on your browser.
 Please turn on your JavaScript for a better view.
-LINE 1: SITE          LINE 3: SITE URL        
-LINE 2: USERNAME      LINE 4: SITE ICON	
+LINE 1: SITE          LINE 3: SITE URL
+LINE 2: USERNAME      LINE 4: SITE ICON
 
 GitHub
 Hans5958
@@ -145,8 +134,9 @@ Scratch
 Scratcher5958
 https://scratch.mit.edu/users/Scratcher5958
 data/icons/min/scratch.png
-	</pre>
-    <div id="footer">
-        <p>Copyright (c) 2018, Hans5958. <a href="https://github.com/Hans5958/hans5958.github.io">Repository of this website.</a></p>
+      </pre>
     </div>
+  </div>
 </body>
+
+</html>

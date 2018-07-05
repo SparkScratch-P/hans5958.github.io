@@ -1,0 +1,189 @@
+body
+{
+  font-family:Roboto, sans-serif;
+  margin:50px 50px 25px;
+}
+
+br
+{
+  content:"";
+  display:block;
+  margin-top:1.4em;
+}
+
+h1
+{
+  font-family:Roboto, sans-serif;
+}
+
+li
+{
+  margin:10px 0;
+}
+
+p,li
+{
+  font-family:Open Sans, sans-serif;
+}
+
+table
+{
+  table-layout:fixed;
+}
+
+a.fancy,a.fancy:visited,#header a,#header a:hover,#header a:visited
+{
+  color:#000;
+  text-decoration:none;
+}
+
+a.fancy:hover
+{
+  text-decoration:underline;
+}
+
+.accountBox
+{
+  overflow:scroll;
+}
+
+.hidden
+{
+  display:none;
+}
+
+.siteIcon
+{
+  display:block;
+  float:left;
+  margin-bottom:auto;
+  margin-right:5px;
+  margin-top:auto;
+  max-height:64px;
+  max-width:64px;
+}
+
+.siteName
+{
+  font-size:20px;
+  margin:8px 0 0;
+}
+
+.titledesc
+{
+  display:block;
+  float:right;
+  font-style:italic;
+}
+
+.userName
+{
+  font-size:12px;
+  margin:0 0 8px;
+}
+
+.widget,#github-card
+{
+  display:block;
+  float:right;
+}
+
+.dropbtn {
+    background-color: #f1f1f1;
+    color: black
+    font-size: 16px;
+    border: none;
+	padding: 13px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	vertical-align: top;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;} 
+
+:focus
+{
+  outline:0;
+}
+
+#account
+{
+  width:100%;
+}
+
+#account td
+{
+  width:auto;
+}
+
+#content
+{
+  min-height: calc(100vh - 190px);
+}
+
+#footer
+{
+  bottom:0;
+  height:auto;
+  left:0;
+  position:relative;
+  text-align:center;
+  width:100%;
+}
+
+#header {
+  position: relative;
+  width:100%;
+}
+
+#header h1
+{
+  margin-bottom:auto;
+  margin-top:auto;
+}
+
+#header table
+{
+  display:inline;
+}
+
+#portal img
+{
+  display:block;
+  height:200px;
+  margin: 0 auto;
+}
+
+#portal p 
+{
+  font-size:14px;
+  text-align:center;
+}
+
+#portal
+{
+  width:100%
+}
