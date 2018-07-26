@@ -47,7 +47,7 @@
         var element = document.createElement("td");
         a.innerHTML = aArray[i]
         b.innerHTML = bArray[i]
-        if (cArray[i] = "") {
+        if (cArray[i] === "") {
           c.removeAttribute("href")
         } else {
           c.setAttribute("href", cArray[i])
@@ -56,7 +56,7 @@
         c.appendChild(d)
         c.appendChild(a)
         c.appendChild(b)
-        element.appendChild(c)s
+        element.appendChild(c)
         $("tr").last()[0].innerHTML += element.outerHTML
         if ($("tr").last()[0].childElementCount == 4) {
           $("tr").last()[0].outerHTML += "<tr></tr>"
@@ -153,8 +153,7 @@ Hans5958_
 https://steamcommunity.com/id/Hans5958
 data/icons/min/steam.png
 -
-Minecraftme
-
+Minecraft
 Hans5958
 https://namemc.com/profile/Hans5958.1
 data/icons/min/minecraft.png

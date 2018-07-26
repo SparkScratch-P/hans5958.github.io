@@ -5,7 +5,7 @@ $(function(){
   $("#nav").load("data/nav.html")
   $("#footer").load("data/footer.html")
   $("body").append("<div id=\"require\">")
-  $("#require").load("data/require.html")
+  $("#require").load("data/require.html",function(){$("head")[0].innerHTML+=$("#require2").html(),$("#require")[0].outerHTML=""})
   Pace.on("done", function() {
     $('#overlay').delay(300).fadeOut(600);
  });
