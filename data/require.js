@@ -7,6 +7,7 @@ $(function(){
   $("body").append("<div id=\"require\">")
   $("#require").load("data/require.html",function(){$("head")[0].innerHTML+=$("#require2").html(),$("#require")[0].outerHTML=""})
   Pace.on("done", function() {
-    $('#overlay').delay(300).fadeOut(600);
+    $('#overlay').delay(300).fadeOut(600)
+	setTimeout(function(){Pace.options.ajax = false}, 300)
  });
 })
