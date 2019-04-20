@@ -8,8 +8,29 @@ html {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+  height: 3rem;
   background-color: #f5f5f5;
-  margin-top: 60pX;
+  margin-top: 3rem;
+}
+
+.footer div.text-muted {
+  margin: 1rem 0
+}
+
+@media (max-width: 575.98px) { 
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 4rem;
+  background-color: #f5f5f5;
+  margin-top: 4rem;
+}
+
+.footer div.text-muted {
+  margin: 1.5rem 0
+}
+
 }
