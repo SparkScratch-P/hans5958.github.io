@@ -20,17 +20,12 @@ html {
 @media (max-width: 575.98px) { 
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
   height: 4rem;
-  background-color: #f5f5f5;
   margin-top: 4rem;
 }
 
 .footer div.text-muted {
-  margin: 1.5rem 0
+  margin: 1rem 0
 }
 
 }
