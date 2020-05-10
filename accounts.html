@@ -4,79 +4,57 @@ title: Accounts
 Description: Here are some of my accounts. You can contact me through these.
 ---
 
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex, nofollow" />
 
 <script>
-	$(function() {
-		var preArray = $("pre")[0].innerHTML.split("\n")
-		var aArray = []
-		var bArray = []
-		var cArray = []
-		var dArray = []
-		for (i = 5; i < preArray.length; i++) {
-			if (i % 5 === 1) {
-				aArray.push(preArray[i - 1])
-			} else if (i % 5 === 2) {
-				bArray.push(preArray[i - 1])
-			} else if (i % 5 === 3) {
-				cArray.push(preArray[i - 1])
-			} else if (i % 5 === 4) {
-				if (preArray[i - 1] == "") {
-					dArray.push("/assets/images/icons/min/blank.png")
-				} else {
-					dArray.push(preArray[i - 1])
-				}
+
+	$.getJSON("/assets/other/accounts.json", response => {
+
+		response.forEach((item, value) => {
+
+			var rowEl = document.createElement("div")
+			rowEl.className = "row"
+			var siteEl = document.createElement("p")
+			var userEl = document.createElement("p")
+			var linkEl = document.createElement("a")
+			var iconEl = document.createElement("img")
+			siteEl.className = "siteName"
+			userEl.className = "userName"
+			linkEl.href = "#"
+			linkEl.target = "_blank"
+			iconEl.className = "siteIcon"
+			if (value % 4 === 0) {
+				document.querySelector("#account").appendChild(rowEl)
 			}
-		}
-		var a = document.createElement("p")
-		var b = document.createElement("p")
-		var c = document.createElement("a")
-		var d = document.createElement("img")
-		a.setAttribute("class", "siteName")
-		b.setAttribute("class", "userName")
-		c.setAttribute("href", "#")
-		c.setAttribute("target", "_blank")
-		d.setAttribute("class", "siteIcon")
-		for (i = 0; i < aArray.length; i++) {
-			c.innerHTML = ""
-			var element = document.createElement("td");
-			a.innerHTML = aArray[i]
-			b.innerHTML = bArray[i]
-			if (cArray[i] === "") {
-				c.removeAttribute("href")
-			} else {
-				c.setAttribute("href", cArray[i])
-			}
-			d.setAttribute("src", dArray[i])
-			c.appendChild(d)
-			c.appendChild(a)
-			c.appendChild(b)
-			element.appendChild(c)
-			$("tr").last()[0].innerHTML += element.outerHTML
-			if ($("tr").last()[0].childElementCount == 4) {
-				$("tr").last()[0].outerHTML += "<tr></tr>"
-			}
-		}
-		$("#rawacc")[0].setAttribute("class", "d-none")
-	});
+			var colEl = document.createElement("div")
+			colEl.className = "col-3"
+			siteEl.textContent = item.site
+			userEl.textContent = item.username
+			iconEl.src = item.icon ? item.icon : "/assets/images/icons/min/blank.png"
+			linkEl.href = item.url
+			console.log(document.querySelector("#account").innerHTML)
+			linkEl.appendChild(iconEl)
+			linkEl.appendChild(siteEl)
+			linkEl.appendChild(userEl)
+			colEl.appendChild(linkEl)
+			document.querySelector("#account .row:last-child").appendChild(colEl)
+
+		});
+	})
+
 </script>
 <style>
 	#account {
-		width: 100%;
-		table-layout: fixed;
-		margin: 0 20px
-	}
-
-	#account td {
-		width: auto
+		margin: 0 20px;
 	}
 
 	#account a {
-		color: #000
+		padding: 0;
+		color: #000;
 	}
 
 	#account a:hover {
-		text-decoration: underline
+		text-decoration: underline;
 	}
 
 	.siteIcon {
@@ -86,132 +64,23 @@ Description: Here are some of my accounts. You can contact me through these.
 		margin-right: 5px;
 		margin-top: auto;
 		max-height: 64px;
-		max-width: 64px
+		max-width: 64px;
 	}
 
 	.siteName {
 		font-size: 20px;
-		margin: 8px 0 0
+		margin: 8px 0 0;
 	}
 
 	s.userName {
 		font-size: 12px;
-		margin: 0 0 8px
+		margin: 0 0 8px;
 	}
 </style>
 <div class="container">
 	<h1>Accounts</h1>
 	<p>Here are some of my accounts. You can contact me through these.</p>
 </div>
-<div class="container-fluid">
-	<table id="account">
-		<tr>
-		</tr>
-	</table>
-	<pre id="rawacc">
-It seems JavaScript is disabled on your browser.
-Please turn on your JavaScript for a better view.
-LINE 1: SITE          LINE 3: SITE URL
-LINE 2: USERNAME      LINE 4: SITE ICON
-
-GitHub
-Hans5958
-https://github.com/Hans5958
-/assets/images/icons/min/github.png
--
-Keybase
-hans5958
-https://keybase.io/hans5958
-/assets/images/icons/min/keybase.png
--
-Reddit
-Hans5958_
-https://reddit.com/u/Hans5958_
-/assets/images/icons/min/reddit.png
--
-Discord
-Hans5958#0969
-
-/assets/images/icons/min/discord.png
--
-Twitter
-Hans5958
-https://twitter.com/Hans5958/
-/assets/images/icons/min/twitter.png
--
-Twitter
-PixelTypos_
-https://twitter.com/PixelTypos_/
-/assets/images/icons/min/twitter.png
--
-Telegram
-Hans5958
-
-
--
-YouTube
-Hans5958
-https://www.youtube.com/user/Hans5958
-/assets/images/icons/min/youtube.png
--
-YouTube
-Shitposter5958
-https://www.youtube.com/channel/UCL08j78oPrIoWn_N7LSAUGQ
-/assets/images/icons/min/youtube.png
--
-Instagram
-Hans5958
-https://www.instagram.com/hans5958/
-/assets/images/icons/min/instagram.png
--
-Instagram
-pixel.typos
-https://www.instagram.com/pixel.typos/
-/assets/images/icons/min/instagram.png
--
-Twitch
-Hans5958_
-https://twitch.tv/Hans5958_
-/assets/images/icons/min/twitch.png
--
-Steam
-Hans5958_
-https://steamcommunity.com/id/Hans5958
-/assets/images/icons/min/steam.png
--
-Minecraft
-Hans5958
-https://namemc.com/profile/Hans5958.1
-/assets/images/icons/min/minecraft.png
--
-Geometry Dash
-Hans5958
-
-/assets/images/icons/min/geometrydash.png
--
-TypeRacer
-Hans5958
-https://data.typeracer.com/pit/profile?user=hans5958
-
--
-Scratch
-Hans5958
-https://scratch.mit.edu/users/Hans5958
-/assets/images/icons/min/scratch.png
--
-Scratch
-Scratcher5958
-https://scratch.mit.edu/users/Scratcher5958
-/assets/images/icons/min/scratch.png
--
-osu!
-Hans5958
-https://osu.ppy.sh/u/Hans5958
-/assets/images/icons/min/osu.png
--
-Wikipedia
-Hans5958
-https://en.wikipedia.org/wiki/User:Hans5958
-
-      </pre>
+<div class="container-fluid" id="account">
+		
 </div>
