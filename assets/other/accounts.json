@@ -26,37 +26,43 @@
 	{
 		"site": "Twitter",
 		"username": "Hans5958",
-		"url": "https://twitter.com/Hans5958/",
+		"url": "https://twitter.com/Hans5958",
 		"icon": "/assets/images/icons/min/twitter.png"
 	},
 	{
 		"site": "Twitter",
 		"username": "Tweets5958",
-		"url": "https://twitter.com/Tweets5958/",
+		"url": "https://twitter.com/Tweets5958",
 		"icon": "/assets/images/icons/min/twitter.png"
 	},
 	{
 		"site": "YouTube",
 		"username": "Hans5958",
-		"url": "https://www.youtube.com/user/Hans5958",
+		"url": "https://www.youtube.com/Hans5958",
 		"icon": "/assets/images/icons/min/youtube.png"
 	},
 	{
 		"site": "YouTube",
 		"username": "Channel5958",
-		"url": "https://www.youtube.com/channel/UCL08j78oPrIoWn_N7LSAUGQ",
+		"url": "https://www.youtube.com/Channel5958",
 		"icon": "/assets/images/icons/min/youtube.png"
+	},
+	{
+		"site": "Minecraft",
+		"username": "Hans5958",
+		"url": "https://namemc.com/profile/Hans5958.1",
+		"icon": "/assets/images/icons/min/minecraft.png"
+	},
+	{
+		"site": "osu!",
+		"username": "Hans5958",
+		"url": "https://osu.ppy.sh/u/Hans5958",
+		"icon": "/assets/images/icons/min/osu.png"
 	},
 	{
 		"site": "Instagram",
 		"username": "Hans5958",
-		"url": "https://www.instagram.com/hans5958/",
-		"icon": "/assets/images/icons/min/instagram.png"
-	},
-	{
-		"site": "Instagram",
-		"username": "pixel.typos",
-		"url": "https://www.instagram.com/pixel.typos/",
+		"url": "https://www.instagram.com/hans5958",
 		"icon": "/assets/images/icons/min/instagram.png"
 	},
 	{
@@ -76,12 +82,6 @@
 		"username": "Hans5958_",
 		"url": "https://steamcommunity.com/id/Hans5958",
 		"icon": "/assets/images/icons/min/steam.png"
-	},
-	{
-		"site": "Minecraft",
-		"username": "Hans5958",
-		"url": "https://namemc.com/profile/Hans5958.1",
-		"icon": "/assets/images/icons/min/minecraft.png"
 	},
 	{
 		"site": "Geometry Dash",
@@ -108,15 +108,15 @@
 		"icon": "/assets/images/icons/min/scratch.png"
 	},
 	{
-		"site": "osu!",
-		"username": "Hans5958",
-		"url": "https://osu.ppy.sh/u/Hans5958",
-		"icon": "/assets/images/icons/min/osu.png"
-	},
-	{
 		"site": "Wikipedia",
 		"username": "Hans5958",
 		"url": "https://en.wikipedia.org/wiki/User:Hans5958",
+		"icon": ""
+	},
+	{
+		"site": "dev.to",
+		"username": "hans5958",
+		"url": "https://dev.to/hans5958",
 		"icon": ""
 	}
 ]
