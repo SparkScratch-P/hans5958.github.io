@@ -11,31 +11,52 @@ Description: Here are some of my accounts. You can contact me through these.
 	$.getJSON("/assets/other/accounts.json", response => {
 
 		response.forEach((item, value) => {
-
-			var rowEl = document.createElement("div")
-			rowEl.className = "row"
-			var siteEl = document.createElement("p")
-			var userEl = document.createElement("p")
-			var linkEl = document.createElement("a")
-			var iconEl = document.createElement("img")
+			
+			let siteEl = document.createElement("p")
 			siteEl.className = "siteName"
+			siteEl.textContent = item.site
+
+			let userEl = document.createElement("p")
 			userEl.className = "userName"
+			userEl.textContent = item.username
+
+			let iconEl
+			if (item.icon) {
+				if (/\.[a-z]+/.test(item.icon)) {
+					iconEl = document.createElement("img")
+					iconEl.className = "siteIcon"
+					iconEl.src = item.icon
+				} else {
+					iconEl = document.createElement("span")
+					iconEl.className = "iconify siteIcon"
+					iconEl.dataset.icon = item.icon
+					iconEl.style = item.iconStyle
+				}
+			} else {
+				iconEl = document.createElement("img")
+				iconEl.className = "siteIcon"
+				iconEl.src = "/assets/images/icons/min/blank.png"
+			}
+			
+
+			let linkEl = document.createElement("a")
 			linkEl.href = "#"
 			linkEl.target = "_blank"
-			iconEl.className = "siteIcon"
-			if (value % 4 === 0) {
-				document.querySelector("#account").appendChild(rowEl)
-			}
-			var colEl = document.createElement("div")
-			colEl.className = "col-3"
-			siteEl.textContent = item.site
-			userEl.textContent = item.username
-			iconEl.src = item.icon ? item.icon : "/assets/images/icons/min/blank.png"
 			linkEl.href = item.url
 			linkEl.appendChild(iconEl)
 			linkEl.appendChild(siteEl)
 			linkEl.appendChild(userEl)
+
+			let colEl = document.createElement("div")
+			colEl.className = "col-3"
 			colEl.appendChild(linkEl)
+
+			if (value % 4 === 0) {
+				let rowEl = document.createElement("div")
+				rowEl.className = "row"
+				document.querySelector("#account").appendChild(rowEl)
+			}
+
 			document.querySelector("#account .row:last-child").appendChild(colEl)
 
 		});
@@ -66,9 +87,14 @@ Description: Here are some of my accounts. You can contact me through these.
 		max-width: 64px;
 	}
 
+	.siteIcon.iconify {
+		height: 64px;
+		width: 64px;
+	}
+
 	.siteName {
 		font-size: 20px;
-		margin: 8px 0 0;
+		margin: 6px 0 0;
 	}
 
 	s.userName {

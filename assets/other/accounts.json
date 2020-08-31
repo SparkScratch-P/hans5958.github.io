@@ -3,7 +3,7 @@
 		"site": "GitHub",
 		"username": "Hans5958",
 		"url": "https://github.com/Hans5958",
-		"icon": "/assets/images/icons/min/github.png"
+		"icon": "logos:github-icon"
 	},
 	{
 		"site": "Keybase",
@@ -15,37 +15,39 @@
 		"site": "Reddit",
 		"username": "Hans5958_",
 		"url": "https://reddit.com/u/Hans5958_",
-		"icon": "/assets/images/icons/min/reddit.png"
+		"icon": "logos:reddit-icon"
 	},
 	{
 		"site": "Discord",
 		"username": "Hans5958#0969",
 		"url": "",
-		"icon": "/assets/images/icons/min/discord.png"
+		"icon": "logos:discord"
 	},
 	{
 		"site": "Twitter",
 		"username": "Hans5958",
 		"url": "https://twitter.com/Hans5958",
-		"icon": "/assets/images/icons/min/twitter.png"
+		"icon": "logos:twitter"
 	},
 	{
 		"site": "Twitter",
 		"username": "Tweets5958",
 		"url": "https://twitter.com/Tweets5958",
-		"icon": "/assets/images/icons/min/twitter.png"
+		"icon": "logos:twitter"
 	},
 	{
 		"site": "YouTube",
 		"username": "Hans5958",
 		"url": "https://www.youtube.com/Hans5958",
-		"icon": "/assets/images/icons/min/youtube.png"
+		"icon": "entypo-social:youtube-with-circle",
+		"iconStyle": "color: red"
 	},
 	{
 		"site": "YouTube",
 		"username": "Channel5958",
 		"url": "https://www.youtube.com/Channel5958",
-		"icon": "/assets/images/icons/min/youtube.png"
+		"icon": "entypo-social:youtube-with-circle",
+		"iconStyle": "color: red"
 	},
 	{
 		"site": "Minecraft",
@@ -66,28 +68,16 @@
 		"icon": "/assets/images/icons/min/instagram.png"
 	},
 	{
-		"site": "Telegram",
-		"username": "Hans5958",
-		"url": "",
-		"icon": ""
-	},
-	{
 		"site": "Twitch",
 		"username": "Hans5958_",
 		"url": "https://twitch.tv/Hans5958_",
-		"icon": "/assets/images/icons/min/twitch.png"
+		"icon": "logos:twitch"
 	},
 	{
 		"site": "Steam",
 		"username": "Hans5958_",
 		"url": "https://steamcommunity.com/id/Hans5958",
-		"icon": "/assets/images/icons/min/steam.png"
-	},
-	{
-		"site": "Geometry Dash",
-		"username": "Hans5958",
-		"url": "",
-		"icon": "/assets/images/icons/min/geometrydash.png"
+		"icon": "logos:steam"
 	},
 	{
 		"site": "TypeRacer",
@@ -111,12 +101,12 @@
 		"site": "Wikipedia",
 		"username": "Hans5958",
 		"url": "https://en.wikipedia.org/wiki/User:Hans5958",
-		"icon": ""
+		"icon": "simple-icons:wikipedia"
 	},
 	{
 		"site": "dev.to",
 		"username": "hans5958",
 		"url": "https://dev.to/hans5958",
-		"icon": ""
+		"icon": "simple-icons:dev-dot-to"
 	}
 ]
