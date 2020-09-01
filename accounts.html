@@ -13,32 +13,32 @@ Description: Here are some of my accounts. You can contact me through these.
 		response.forEach((item, value) => {
 			
 			let siteEl = document.createElement("p")
-			siteEl.className = "siteName"
+			siteEl.className = "site-name"
 			siteEl.textContent = item.site
 
 			let userEl = document.createElement("p")
-			userEl.className = "userName"
+			userEl.className = "user-name"
 			userEl.textContent = item.username
 
 			let iconEl
 			if (item.icon) {
 				if (/\.[a-z]+/.test(item.icon)) {
 					iconEl = document.createElement("img")
-					iconEl.className = "siteIcon"
+					iconEl.className = "site-icon"
 					iconEl.src = item.icon
 				} else {
 					iconEl = document.createElement("span")
-					iconEl.className = "iconify siteIcon"
+					iconEl.className = "iconify site-icon"
 					iconEl.dataset.icon = item.icon
 					iconEl.style = item.iconStyle
 				}
 			} else {
-				iconEl = document.createElement("img")
-				iconEl.className = "siteIcon"
-				iconEl.src = "/assets/images/icons/min/blank.png"
+				iconEl = document.createElement("span")
+				iconEl.className = "iconify site-icon"
+				iconEl.dataset.icon = "fa:file-o"
+				iconEl.style = "color: gray"
 			}
 			
-
 			let linkEl = document.createElement("a")
 			linkEl.href = "#"
 			linkEl.target = "_blank"
@@ -47,65 +47,81 @@ Description: Here are some of my accounts. You can contact me through these.
 			linkEl.appendChild(siteEl)
 			linkEl.appendChild(userEl)
 
+			let wrapEl = document.createElement("div")
+			wrapEl.className = "account"
+			wrapEl.appendChild(linkEl)
+			
 			let colEl = document.createElement("div")
-			colEl.className = "col-3"
-			colEl.appendChild(linkEl)
+			colEl.className = "col-12 col-sm-6 col-md-4 col-xl-3"
+			colEl.appendChild(wrapEl)
 
-			if (value % 4 === 0) {
-				let rowEl = document.createElement("div")
-				rowEl.className = "row"
-				document.querySelector("#account").appendChild(rowEl)
-			}
+			// if (value % 4 === 0) {
+			// 	let rowEl = document.createElement("div")
+			// 	rowEl.className = "row"
+			// 	document.querySelector("#account").appendChild(rowEl)
+			// }
 
-			document.querySelector("#account .row:last-child").appendChild(colEl)
+			document.querySelector("#accounts .row:last-child").appendChild(colEl)
 
 		});
 	})
 
 </script>
 <style>
-	#account {
-		margin: 0 20px;
+	#accounts .col-12 {
+		padding: 0
 	}
 
-	#account a {
-		padding: 0;
-		color: #000;
+	.account {
+		color: black;
+		padding: 0.375rem 15px
 	}
 
-	#account a:hover {
-		text-decoration: underline;
+	.account:hover {
+		background: rgb(248, 248, 248);
 	}
 
-	.siteIcon {
+	.account a {
+		color: black;
+	}
+
+	.account a:hover {
+		text-decoration: none
+	}
+
+	.site-icon {
 		display: block;
 		float: left;
 		margin-bottom: auto;
-		margin-right: 5px;
+		margin-right: 0.75rem;
 		margin-top: auto;
 		max-height: 64px;
-		max-width: 64px;
+		max-width: 64px
 	}
 
-	.siteIcon.iconify {
+	.site-icon.iconify {
 		height: 64px;
-		width: 64px;
+		width: 64px
 	}
 
-	.siteName {
+	.site-name {
 		font-size: 20px;
-		margin: 6px 0 0;
+		margin: 10px 0 4px;
+		line-height: 1;
 	}
 
-	s.userName {
-		font-size: 12px;
-		margin: 0 0 8px;
+	.user-name {
+		margin: 8px 0;
+		margin-bottom: 10px;
+		line-height: 1
 	}
 </style>
+
 <div class="container">
 	<h1>Accounts</h1>
 	<p>Here are some of my accounts. You can contact me through these.</p>
 </div>
-<div class="container-fluid" id="account">
-		
+
+<div class="container-xl" id="accounts">
+	<div class="row"></div>
 </div>
