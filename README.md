@@ -24,11 +24,7 @@ For nerds, the technologies that are used are as follows.
 - Notepad++ (text editor)
 - Google (for hours of internet searching for bug fixes and guides)
 
-<small>
-
-* slowly deprecrated except Bootstrap
-
-</small>
+\* slowly deprecrated except Bootstrap
 
 ## License
 
