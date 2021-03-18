@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/hans5958
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hans5958.github.io
+  * I am hans5958 (https://keybase.io/hans5958) on keybase.
+  * I have a public key with fingerprint E128 0A38 C6BE 5FF5 0AB3  C449 0EDA 2FD5 3E54 C2D7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017a9ea8654211bab74fdc0a8eabe3798d6134fa91a046e61c6ff510695b0b06910a",
+      "fingerprint": "e1280a38c6be5ff50ab3c4490eda2fd53e54c2d7",
+      "host": "keybase.io",
+      "key_id": "0eda2fd53e54c2d7",
+      "kid": "01017a9ea8654211bab74fdc0a8eabe3798d6134fa91a046e61c6ff510695b0b06910a",
+      "uid": "e336057f1bdb7fc297b62a2ed18a6019",
+      "username": "hans5958"
+    },
+    "service": {
+      "hostname": "hans5958.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1616046178,
+  "expire_in": 157680000,
+  "prev": "0bc9d2201fd4f3cf76c51801352085fcaaac01ad64342cf719fa535a2ab6e10d",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJbSBVRFL3mIxRvmGJBEdJE0kPtnHmcmblQUFEapR+RPTC7njNzRidv
+917vjNfMrI8K/eiBGBoakVb6E0VRmfTjqxIKqSgqsSgCSSsoKx8o2Bmtn/rt/GzO
+3mutvddm97gjXXERmV9H4wasdCviUeeFUlfB9o+kgiMBvZzzVHDFdCZQn04t21ts
+6pyHAxBAGasUK0gSeQgJJrJo6BrACsWECrKq6AgKooFViIGIKIIaMgwJAqRKBBAW
+IMBcGmeY/kIaCoZMv81kKeQVgAVFQ4RKDA4wETRRVAHVMW/okkAlUeN1mRGLApbD
+YMMRbNEMM8By7OOdHe9f/H+eu3RGjgoCApJsQKIT2dB4VSaIxzzVoYIRgKoDtGjI
+jw9Qhi7CfktSJYWrTONYNmxq1Fms4+QvREahaReVkllXwVDADmgBn1O37aDlcfh2
+edAhlFHi/S3lJaZfZ9tkjDANWWbAz3kgQ2q26WhDBBEzBGUljaMHg2aIek0HIclI
+Aew5fWjYWRHRVJ3nATR00RA0Q0aaBBUABYkHimRoGGMNQKwjURB5VoaqgSVBwjwm
+iEKgc465En+A8whM1MaFTNMyC/3YLg1RrrKrY2+UKyLOFRM9xzkzV1xswp/jU/fP
+nc4emZcXbn882tt6pubmF5IzuOh75qH4xD1996OXRN8amEzpiOGP59a86O3vch89
+m6RM13U8OzLUVN2hul8XdLZwbQ8zfO/Te05ZZ86JW1eODbofWLUeX9hnXap9kUeH
+b2RNjE9tWbeitftbUu/Y58Vy/vxtLa5jGy6nxjef3Ld6IvNlQ1XD0sGc25UXdyIt
+9Uou3PTyWsa95031J1rq2iObS1ZVQKHmaUL2vdPvc39+SH81vqD+zfUdh2smn93p
+S62aWpsS+yTZ7AoufzrRNiyuH4kaupt3Nb7/h5XS/W5zcuT5jYNrErNGQu6y6k/v
+slp35zcte7uLczfGnjhw+OTC3kY09gv4kkdg
+=JheZ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hans5958
+
+==================================================================

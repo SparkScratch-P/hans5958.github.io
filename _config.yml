@@ -9,4 +9,5 @@ copyright_year: 2021
 repository: https://github.com/Hans5958/hans5958.github.io
 
 markdown: kramdown
+include: [".well-known"]
 exclude: ["README.md", "CODE_OF_CONDUCT.md"]
